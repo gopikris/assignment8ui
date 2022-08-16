@@ -19,7 +19,7 @@ class Details extends React.Component {
         axios(
             {
                 method: 'GET',
-                url: `http://localhost:3000/restaurant/getRestaurantById/${restaurantId}`,
+                url: `https://zomato8ms.herokuapp.com/restaurant/getRestaurantById/${restaurantId}`,
                 headers: { 'Content-Type': 'application/json' }
             }
         ).then(response => this.setState({ restaurantData: response.data })).catch()
